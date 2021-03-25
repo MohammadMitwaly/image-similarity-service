@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from services.compare_opencv_demo import compare_opencv_demo
+from src.services.compare_opencv_demo import compare_opencv_demo
 
 app = FastAPI()
 
