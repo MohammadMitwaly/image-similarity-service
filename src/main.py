@@ -12,3 +12,5 @@ async def root():
 @app.post("/compare/opencv")
 def compare_opencv():
     return compare_opencv_demo()
+
+#TODO: add request for image-hash demo
