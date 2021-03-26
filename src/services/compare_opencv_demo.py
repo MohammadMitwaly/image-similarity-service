@@ -7,13 +7,13 @@ def compare_opencv_demo():
     historgrams = []
     similarity_map = {}
 
-    org_image_file = cv2.imread("./data/{filename}".format(filename=original)) 
+    org_image_file = cv2.imread("src/data/{filename}".format(filename=original)) 
     gray_image = cv2.cvtColor(org_image_file, cv2.COLOR_BGR2GRAY) 
     org_histogram = cv2.calcHist([gray_image], [0],  
                             None, [256], [0, 256]) 
 
     for image in images:
-        imageFile = cv2.imread("./data/{filename}".format(filename=image))
+        imageFile = cv2.imread("src/data/{filename}".format(filename=image))
         gray_image = cv2.cvtColor(imageFile, cv2.COLOR_BGR2GRAY) 
         histogram = cv2.calcHist([gray_image], [0], None, [256], [0, 256])
         historgrams.append(histogram)

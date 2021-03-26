@@ -10,5 +10,5 @@ async def root():
 
 
 @app.post("/compare/opencv")
-def compare_opencv(body):
+def compare_opencv():
     return compare_opencv_demo()
