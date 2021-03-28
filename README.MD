@@ -2,6 +2,22 @@
 
 This is part of a project to compare images using different algorithms and techniques. The goal is to identify the best method for determining similarity of multiple images of the same object.
 
+## Run the server:
+
+```bash
+# create python-virtual-env
+python -m venv env
+
+# Run env
+source env/Scripts/activate
+
+# Install packages
+pip install -r requirements.txt
+
+# Run server
+bash src/rundev.sh
+```
+
 ## Available methods:
 
 - OpenCV: `POST request /compare/opencv`
